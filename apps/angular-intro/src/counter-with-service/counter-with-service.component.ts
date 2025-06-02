@@ -10,6 +10,7 @@ import { CounterService } from './counter.service';
   selector: 'app-counter-with-service',
   templateUrl: './counter-with-service.component.html',
   imports: [CommonModule, ValueComponent, ButtonComponent],
+  providers: [CounterService],
 })
 export class CounterWithServiceComponent {
   private readonly counterService = inject(CounterService);
